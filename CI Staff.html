@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CommunityIngrainedWellness.org/Staff</title>
+    <link rel="stylesheet" type="text/css" href="CIstyle.css">
+    <script src="CI_JS.js" defer></script>
+    <style>
+        header h2 {
+            border: 0px;
+            background: revert;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="Community Ingrained.html">Home</a></li>
+                    <li><a href="CI About.html">About</a></li>
+                    <li><a href="CI Donation.html">Donation</a></li>
+                    <li><a href="CI Staff.html">Staff</a></li>
+                    <li><a href="CI Programs.html">Programs</a></li>
+                    <li><a href="CI Gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+            <h1>Community Ingrained Wellness <img src="images/logo.png" height="120px" alt="Logo"></h1>   
+            <h2>Meet Our Team <br> Dedicated to Supporting the Immigrant Community</h2>
+        </header>
+    </section>
+
+    <section class="staff-container">
+        <div class="staff-member">
+            <img src="images/faduma.jpg" onclick="showPopup('faduma')" alt="Faduma Yusuf">
+            <p>Faduma Yusuf</p>
+        </div>
+        
+        <div class="staff-member">
+            <img src="images/ikram.jpg" onclick="showPopup('ikram')" alt="Ikram Warsame">
+            <p>Ikram Warsame</p>
+        </div>
+        <div class="staff-member">
+            <img src="images/hamdi.jpg" onclick="showPopup('hamdi')" alt="Hamdi O. Hassan">
+            <p>Hamdi O. Hassan</p>
+        </div>
+        <div class="staff-member">
+            <img src="images/hamdi_a.jpg" onclick="showPopup('hamdi_a')" alt="Hamdi A. Hassan">
+            <p>Hamdi A. Hassan</p>
+        </div>
+        <div class="staff-member">
+            <img src="images/ilham.jpg" onclick="showPopup('ilham')" alt="Ilham Ibrahim">
+            <p>Ilham Ibrahim</p>
+        </div>
+    </section>
+
+    <div id="popup" class="popup">
+        <span class="close" onclick="hidePopup()">&times;</span>
+        <p id="popup-content"></p>
+    </div>
+
+    <footer>
+        <img src="images/tulailip casino.png" height="50px" alt="Sponsor Logo">
+        <img src="images/share fund .png" height="50px" alt="Sponsor Logo">
+        <img src="images/seattle foundation.png" height="50px" alt="Sponsor Logo">
+        <img src="images/King County.png" height="50px" alt="Sponsor Logo">
+        <img src="images/communities rise.png" height="50px" alt="Sponsor Logo">
+        <section id="imagebox">
+            <a href="https://www.instagram.com/pacs.wa/" target="_blank">
+                <img src="images/instagram.jpeg" alt="Instagram" width="50" height="50">
+            </a>
+            <a href="https://www.facebook.com/people/Pan-African-Community-Services/61556755801068/" target="_blank">
+                <img src="images/facebook.jpeg" alt="Facebook icon" width="50" height="50">
+            </a>
+            <a href="mailto:info@pacswa.org" target="_blank">
+                <img src="images/email.jpeg" alt="Email icon" width="50" height="50">
+            </a>
+        </section>
+        <p>&copy; 2025 Pan African Community Services and Community Ingrained Wellness. All Rights Reserved.<br> 
+            Developers | <a href="https://www.linkedin.com/in/camille-mccullers-2b812832b/">Camille McCullers</a> 
+            <a href="https://urldefense.com/v3/__https://www.linkedin.com/in/samiraaali?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app__;!!K-Hz7m0Vt54!hpeHzfbjmHD3DmQTlKYh_bRQUSCgS5VcBrO65QKhcrc6PZfrHOWlc_8To9cnN0ID4mF_iMrQL0tHOHV-9JwB$">Samira Ali</a>
+            <a href="https://urldefense.com/v3/__https://www.linkedin.com/in/rayan-farah-511098220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app__;!!K-Hz7m0Vt54!khuMLZGNPOMYRZvmE00RjGMdl4BC7IWFL5kKU0KNp06iBTYaCq00Y4OVWmtlKTLy02-oak-kDqQ8nA27GsOS-A$">Rayan Farah</a>
+            <a href="https://urldefense.com/v3/__http://www.linkedin.com/in/yasmin-mohamed-5a4b98228__;!!K-Hz7m0Vt54!jiAI4StS9Po_C3V8CkX0mkw_8ThKtFK7MO5gMl-rhTsSNoNynaNnSyOrV9fYy-fj8J8JEyCZkGxqPF0r$">Yasmin Mohamed</a>
+        </p>
+    </footer>
+
+    <script>
+        function showPopup(name) {
+            let bios = {
+                'faduma': "Faduma Yusuf is the founder and executive director of Pan African Community Services. She has over five years of experience working for various nonprofits in Seattle. She graduated from the University of Washington with a Bachelor of Arts in Medical Anthropology and a Master's in Public Administration in Healthcare. Her goals are to ensure that African immigrant communities in King County have access to health, social, and educational services to promote resilience, equitable access, and community education.",
+                'ikram': "Ikram Warsame is the Board President of PACS. She brings with her more than 6 years of experience and engaging with community members through action-driven events and advocacy.",
+                'hamdi': "Hamdi O. Hassan has over five years of experience working for various nonprofits and private companies in Seattle. She graduated from the University of Washington with a Bachelor of Arts in American Ethnic Studies and a Master's in Public Administration. Her goals are for African/Black communities to have resources available for them to improve their quality of life.",
+                'hamdi_a': "Hamdi A. Hassan holds a Masters in Occupational Therapy and is a licensed OT provider and joined the board when PACS was founded in 2020. She is a first-generation Somali American and has experience providing community occupational therapy services for BIPOC patients at Multicare, Seattle Children's Hospital, and University of Washington.",
+                'ilham': "Ilhan Ibrahim holds a BS degree in Diagnostic Ultrasound from Seattle University and is multilingual in (English, Somali, and Swahili) with experience providing social services and advocacy. She is currently affiliated with Providence Hospital Group as a Cardiac Ultrasound Tech."
+            };
+            document.getElementById('popup-content').innerText = bios[name];
+            document.getElementById('popup').style.display = 'block';
+        }
+
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
