@@ -488,7 +488,7 @@ body {
 /* Hero Section Styling */
 #hero {
     position: relative;
-    background-image: url('images/Hero.png'); /* Apply the background image here */
+    background-image: url('Images/Hero.png'); /* Apply the background image here */
     background-size: cover;
     background-position: center;
     background-color: transparent ;
