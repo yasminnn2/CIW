@@ -41,6 +41,9 @@ nav {
     height: 53.5px;
     padding: 0;
     margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 nav ul {
@@ -165,7 +168,7 @@ textarea {
 }
 
 #contact button:hover, #donate button:hover {
-  background-color: var(--secondary-color); /* Evergreen Green */
+  background-color: var(--accent-color); /* Evergreen Green */
 }
 
 header img {
@@ -397,7 +400,7 @@ body {
     max-width: 800px;  /* Set a max width for the content */
     margin: 0 auto;  /* Centers the content horizontally */
     padding: 20px;  /* Adds some padding for spacing */
-    text-align: left;  /* Align the text to the left */
+    text-align: center;  /* Align the text to the center */
 }
 
 #mission-info p {
@@ -488,11 +491,11 @@ body {
 /* Hero Section Styling */
 #hero {
     position: relative;
-    background-image: url('Images/Hero.png'); /* Apply the background image here */
-    background-size: cover;
+    background-image: url('Images/Hero.png');
+    background-size: 100vw 100vh; /* Forces the image to match the viewport size */
+    background-repeat: no-repeat; /* Prevents tiling */
     background-position: center;
-    background-color: transparent ;
-    height: 40vh;  /* Full viewport height */
+    background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -500,7 +503,12 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    width: 100vw; /* Ensures the container takes up the full viewport width */
+    height: 100vh; /* Ensures the container takes up the full viewport height */
+    box-sizing: border-box;
+    padding-top: 60px;
 }
+
 
 /* Overlay for better readability of text */
 .hero-overlay {
@@ -518,7 +526,7 @@ body {
     z-index: 2;  /* Ensure content is above the overlay */
     text-align: center;
     padding: 10x;
-    max-width: 600px; /* Restrict width */
+    max-width: 100%; /* Restrict width */
 }
 
 /* Heading styling */
@@ -603,10 +611,11 @@ body {
 #mission img {
     max-width: 40%; /* Adjust the size of the image */
     height: auto;   /* Maintain aspect ratio */
-    margin-right: 20px; /* Optional: Adds space between the image and text */
-    text-align: center;
-
+/*    margin-right: 20px; /* Optional: Adds space between the image and text */
+    display: block;
+    margin: 0 auto;
 }
+
 body {
     text-align: center;
     justify-content: center;
