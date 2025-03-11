@@ -3,18 +3,25 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="CIstyle.css">
-    <script src="CI JS.js" defer></script>
-    <title>CommunityIngrainedWellness.org/Programs</title>
-    <style>
-        p {
-            margin: 0px;
-            padding: 0px;
-            text-align: left;
+    <title>CommunityIngrainedWellness.org/Donation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="javaScript.js" defer></script>
+    <style type="text/css">
+        h3 {
+            text-align: center;
         }
 
-        footer p{
+        label {
             text-align: center;
+        }
+
+        form {
+            gap: 5px;
+        }
+
+        #donate button {
+            background-color: var(--secondary-color);
+            align-content: center;
         }
     </style>
 </head>
@@ -24,11 +31,11 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="CI About.html">About</a></li>
-                    <li><a href="CI Donation.html">Donation</a></li>
-                    <li><a href="CI Staff.html">Staff</a></li>
-                    <li><a href="CI Programs.html">Programs</a></li>
-                    <li><a href="CI Gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="donation.html">Donation</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
             <h1>
@@ -36,39 +43,41 @@
                 <img src="Images/logo.png" height="120px" alt="Logo">
             </h1>   
         </header>
+        <div class="counter-section">
+            <div class="stat">
+                <span class="count" data-target="4000">200</span>+
+                <p>Donors</p>
+            </div>
+            <div class="stat">
+                <span class="count" data-target="8">3</span>+
+                <p>Active programs</p>
+            </div>
+            <div class="stat">
+                <span class="count" data-target="500">50</span>+
+                <p>Success Stories</p>
+            </div>
+        </div>
     </section>
 
-    <!-- Program 1 -->
-    <div class="program">
-        <img src="Images/imageJ.jpg" alt="Program Image">
-        <div class="program-text">
-            <h3>iLead Youth Intervention Program</h3>
-            <p>
-                iLead is a youth-focused program that offers career and social navigation opportunities for youth 
-                from low-income communities in Seattle or troubled youth who often struggle in school. The program 
-                connects youth with mentors and academic and career preparation programs that aim to economically 
-                uplift our youth.
-            </p>
-        </div>
-    </div>
+    <section id="donate">
+        <!-- Donation Section -->
+        <h3>Donate to Support Our Mission</h3>
+        <form action="process_donation.php" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
 
-    <!-- Program 2 -->
-    <div class="program">
-        <img src="Images/imageE.jpg" alt="Program Image">
-        <div class="program-text">
-            <h3>PACS System Navigation</h3>
-            <p>
-                Systems Navigation was designed to assist African families with children and youth in South Seattle 
-                neighborhoods to navigate Seattle Public Schools, the Criminal Justice System, and applying for assistance 
-                from DSHS and other social service organizations. Families learn how to navigate standardized testing, 
-                communicate effectively with teachers, and understand court systems. PACS System Navigation hopes to 
-                empower families to be self-sufficient in applying for social services and solving common language 
-                barrier-related issues experienced by immigrant families.
-            </p>
-        </div>
-    </div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
 
-<footer>
+                <label for="amount">Donation Amount ($):</label><br>
+                <input type="number" id="amount" name="amount" min="1" required><br><br>
+
+                <button type="submit">Donate Now</button>
+            </div>
+        </form>
+    </section>
+    <footer>
         <img src="Images/tulailip casino.png" height="50px" alt="Sponsor Logo">
         <img src="Images/share fund .png" height="50px" alt="Sponsor Logo">
         <img src="Images/seattle foundation.png" height="50px" alt="Sponsor Logo">
@@ -94,5 +103,3 @@
     </footer>
 </body>
 </html>
-
-
